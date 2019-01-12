@@ -1,6 +1,8 @@
 #!/usr/bin/perl
 
 package Crypt::Random::Source::Weak::openssl;
+# ABSTRACT: Get random bytes from the OpenSSL command line utility
+
 use Moose;
 
 use File::Which qw(which);
@@ -71,11 +73,6 @@ __END__
 
 =pod
 
-=head1 NAME
-
-Crypt::Random::Source::Weak::openssl - Get random bytes from the OpenSSL
-command line utility
-
 =head1 SYNOPSIS
 
 	use Crypt::Random::Source::Strong::openssl;
@@ -120,21 +117,5 @@ C<openssl> (which means it must be in your C<PATH>).
 L<Crypt::Random::Source>
 
 L<openssl(1)>, L<rand(1)>
-
-=head1 VERSION CONTROL
-
-This module is maintained using Darcs. You can get the latest version from
-L<http://nothingmuch.woobling.org/code>, and use C<darcs send> to commit
-changes.
-
-=head1 AUTHOR
-
-Yuval Kogman E<lt>nothingmuch@woobling.orgE<gt>
-
-=head1 COPYRIGHT
-
-	Copyright (c) 2008 Yuval Kogman. All rights reserved
-	This program is free software; you can redistribute
-	it and/or modify it under the same terms as Perl itself.
 
 =cut

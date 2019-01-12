@@ -1,0 +1,6 @@
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+Crypt-Random-Source-Weak-openssl-*.tar.gz
+Crypt-Random-Source-Weak-openssl-*/
