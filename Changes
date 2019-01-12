@@ -1,0 +1,7 @@
+Revision history for Crypt-Random-Source-Weak-openssl
+
+0.02      2009-11-25
+          - switch from Squirrel to Moose.
+
+0.01      2008-06-17
+          - Initial release.
