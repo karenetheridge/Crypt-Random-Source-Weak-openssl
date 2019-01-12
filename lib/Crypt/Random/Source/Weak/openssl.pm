@@ -1,11 +1,11 @@
 package Crypt::Random::Source::Weak::openssl;
 # ABSTRACT: Get random bytes from the OpenSSL command line utility
 
-use Moose;
+use Moo;
 
 use File::Which qw(which);
 
-use namespace::clean -except => [qw(meta)];
+use namespace::clean;
 
 our $VERSION = "0.03";
 
@@ -31,9 +31,8 @@ has default_chunk_size => (
 );
 
 has 'command' => (
-	isa => "ArrayRef",
-	is  => "ro",
-	lazy_build => 1,
+	isa => sub { die "$_[0] must be an arrayref" unless ref $_[0] eq 'ARRAY' },
+	is => 'lazy',
 	clearer => "clear_command",
 );
 
