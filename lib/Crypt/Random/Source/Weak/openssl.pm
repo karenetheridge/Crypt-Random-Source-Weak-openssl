@@ -1,5 +1,3 @@
-#!/usr/bin/perl
-
 package Crypt::Random::Source::Weak::openssl;
 # ABSTRACT: Get random bytes from the OpenSSL command line utility
 
